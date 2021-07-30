@@ -13,6 +13,7 @@ public class Util {
 		list.add("Hyd");
 		list.add("Vizag");
 		list.add("Chennai");
+		list.add("Bhihar");
 		
 		return list;
 	}
