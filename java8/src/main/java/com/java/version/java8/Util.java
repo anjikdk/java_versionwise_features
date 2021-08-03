@@ -23,6 +23,7 @@ public class Util {
 	public static List<Hosting> getListOfHostDetails()
 	{
 		List<Hosting> list = new ArrayList<>();
+		
         list.add(new Hosting(1, "liquidweb.com", 80000));
         list.add(new Hosting(2, "linode.com", 90000));
         list.add(new Hosting(3, "digitalocean.com", 120000));
@@ -35,6 +36,7 @@ public class Util {
 	public static List<Hosting> getListOfHostDetailsWithDuplicateName()
 	{
 		List<Hosting> list = new ArrayList<>();
+		
         list.add(new Hosting(1, "liquidweb.com", 80000));
         list.add(new Hosting(2, "linode.com", 90000));
         list.add(new Hosting(3, "digitalocean.com", 120000));
