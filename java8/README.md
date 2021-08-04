@@ -8,3 +8,4 @@ Java8 Features:
 5. Java Stream API for Bulk Data Operations on Collections
 6. Optional class
 7. Date/Time API Changes
+8. StringJoiner class
