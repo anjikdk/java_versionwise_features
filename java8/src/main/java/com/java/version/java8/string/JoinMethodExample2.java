@@ -1,6 +1,7 @@
 package com.java.version.java8.string;
 
 import java.util.List;
+import java.util.stream.Collectors;
 
 import com.java.version.java8.Util;
 
@@ -17,8 +18,8 @@ public class JoinMethodExample2 {
 	
 	public String convertFromListToString(List<String> list)
 	{
-		return String.join(",", list).replaceAll("([^,]+)", "\"$1\"");
+//		return String.join(",", list).replaceAll("([^,]+)", "\"$1\"");
 		
-//		return list.stream().map(s -> '"'+s+'"').collect(Collectors.joining(","));
+		return list.stream().map(s -> '"'+s+'"').collect(Collectors.joining(","));
 	}
 }
