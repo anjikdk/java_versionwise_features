@@ -17,7 +17,7 @@ public class FunctionalInterfaceExample
 {
 	public static void main(String[] args) {
 		
-		// Here we are using lamda expression
+		// Here we are using lambda expression
 		Addition obj = (i, j) -> i+j;
 		
 		int k = obj.add(20, 30);
