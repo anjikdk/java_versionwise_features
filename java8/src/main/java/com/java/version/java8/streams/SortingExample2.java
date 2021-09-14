@@ -14,7 +14,7 @@ public class SortingExample2 {
 		System.out.println("Before Sorting: "+hostings);
 
 		// Sorting based on Host names
-		List<Hosting> sortHostList = hostings.stream().sorted(Comparator.comparing(Hosting::getName)).collect(Collectors.toList());
+		List<Hosting> sortHostList = hostings.stream().sorted(Comparator.comparing(Hosting::getName)).limit(2).collect(Collectors.toList());
 		System.out.println("Sorting based on host names: "+sortHostList);
 
 		// Sorting based on Websites
