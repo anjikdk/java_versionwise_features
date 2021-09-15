@@ -19,13 +19,15 @@ public class EmployeeSortingExample1
 		System.out.println(empMap);
 		
 		// sorting and grouping by
-		Map<String, List<Employee>> empMap1 = empList.stream().sorted(Comparator.comparingDouble(Employee::getSalary).reversed()).collect(Collectors.groupingBy(Employee::getDepartment));
+		Map<String, List<Employee>> empMap1 = empList.stream().sorted(Comparator.comparingDouble(Employee::getSalary).reversed())
+				.collect(Collectors.groupingBy(Employee::getDepartment));
 		System.out.println(empMap1);
 		
 		// grouping, sorting and limit
 		Map<String, List<Employee>> empMap2 = empList.stream().collect(Collectors.groupingBy(Employee::getDepartment, 
 				Collectors.collectingAndThen(Collectors.toList(), 
-						e -> e.stream().sorted(Comparator.comparingDouble(Employee::getSalary).reversed()).limit(2).collect(Collectors.toList()))));
+						e -> e.stream().sorted(Comparator.comparingDouble(Employee::getSalary).reversed()).limit(2)
+						.collect(Collectors.toList()))));
 		System.out.println(empMap2);
 	}
 	
